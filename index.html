@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapa Fortalecer para Avançar – Enfermagem UERN Caicó</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body { background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif; margin:0; }
+
+    /* Banner */
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    header img.banner {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+    .banner-text-wrapper {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 2rem;
+    }
+    .banner-box {
+      background: rgba(0,0,0,0.6);
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 200px;
+    }
+    .banner-box h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+    }
+    .banner-box h2 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #ddd;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+    }
+
+    /* Seção eleições */
+    .countdown { text-align: center; padding: 2rem; background: #003366; color: white; }
+    .countdown h2 { margin-bottom: 0.5rem; color: white; }
+    .countdown p { font-size: 1.2rem; color: white; }
+    .countdown button {
+      background: #FFD700;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    /* Propostas */
+    .proposal-card { background: white; border: 1px solid #ddd; padding: 1.2rem; border-radius: 6px; margin-bottom: 1rem; }
+
+    /* Apoio */
+    .like-section { text-align: center; margin: 2rem 0; }
+    .like-section button { background: none; border: none; font-size: 3rem; cursor: pointer; }
+    .like-section p { margin-top: 0.5rem; font-weight: bold; }
+
+    /* Rodapé */
+    footer { text-align: center; padding: 2rem 1rem; background: #003366; color: white; }
+    footer img { max-height: 80px; display: block; margin: 0 auto 1rem auto; }
+  </style>
+</head>
+<body>
+
+  <!-- Banner com nomes embaixo das fotos -->
+  <header>
+    <img src="banner.jpg" alt="Card da Chapa Fortalecer para Avançar" class="banner">
+    <div class="banner-text-wrapper">
+      <div class="banner-box">
+        <h1>Profa. Jéssica Tinôco</h1>
+        <h2>Chefe</h2>
+      </div>
+      <div class="banner-box">
+        <h1>Profa. Regilene Portela</h1>
+        <h2>Subchefe</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- Seção eleições -->
+  <section class="countdown">
+    <h2>🗳 Eleições – 29 de Setembro</h2>
+    <p id="timer"></p>
+    <a href="https://sigaa.uern.br/sigeleicao/" target="_blank">
+      <button>👉 VOTE AQUI</button>
+    </a>
+  </section>
+
+  <main class="container">
+
+    <!-- Carta Proposta -->
+    <section id="carta">
+      <h2>Carta Proposta</h2>
+      <p>É com profundo respeito, senso de responsabilidade e compromisso com a formação de qualidade que apresentamos nossa candidatura à Chefia e Vice-Chefia do Curso de Enfermagem – UERN Caicó.</p>
+      <p>Nos últimos anos, vivenciamos um percurso desafiador. Passamos por um cenário de desvalorização da nossa universidade, enfrentamos os efeitos da pandemia da COVID-19 e, mesmo diante de tantas dificuldades, conseguimos avançar com a reformulação de nosso curso, que agora se estrutura como Bacharelado em Enfermagem.</p>
+      <p>Esse caminho só foi possível graças ao trabalho comprometido das gestões anteriores, que nos deixam um legado valioso. A partir deste solo fértil, queremos propor novos voos.</p>
+    </section>
+
+    <!-- Propostas -->
+    <section id="propostas">
+      <h2>Propostas da Chapa</h2>
+
+      <h3>Gestão Inovadora</h3>
+      <div class="proposal-card">Implantar ferramentas digitais para modernizar processos administrativos e acadêmicos, garantindo maior agilidade, transparência e eficiência.</div>
+      <div class="proposal-card">Promover uma gestão participativa, aberta ao diálogo constante com estudantes, docentes, técnicos e comunidade externa.</div>
+      <div class="proposal-card">Ampliar os canais de comunicação digital com informações acessíveis e atualizadas.</div>
+
+      <h3>Ensino e Qualificação Docente</h3>
+      <div class="proposal-card">Apoiar e incentivar a qualificação contínua do corpo docente, fortalecendo metodologias inovadoras e centradas no estudante.</div>
+      <div class="proposal-card">Desenvolver estratégias com foco no desempenho do curso no ENADE, com ações de preparação contínua e acompanhamento estudantil.</div>
+      <div class="proposal-card">Lutar por melhorias na infraestrutura: clínica escola, laboratórios e espaços de convivência.</div>
+
+      <h3>Visibilidade, Integração e Inovação</h3>
+      <div class="proposal-card">Ampliar a visibilidade regional do curso e fortalecer a integração ensino-serviço-comunidade.</div>
+      <div class="proposal-card">Estimular a cultura da inovação e do empreendedorismo no curso.</div>
+      <div class="proposal-card">Fortalecer ensino, pesquisa, extensão e pós-graduação, com novas especializações.</div>
+      <div class="proposal-card">Consolidar e ampliar parcerias interprofissionais e institucionais.</div>
+    </section>
+
+  </main>
+
+  <!-- Apoio e Sugestões -->
+  <section aria-label="Sugestões e Apoio" id="sugestoes">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Participe da nossa construção coletiva</h2>
+          <h3>Deixe seu apoio ou envie sua sugestão</h3>
+        </hgroup>
+
+        <!-- Apoio (likes) -->
+        <div class="like-section">
+          <button id="likeBtn">🤍</button>
+          <p><span id="likeCount">0</span> apoios recebidos</p>
+        </div>
+
+        <!-- Formulário de Sugestões -->
+        <form class="grid">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" aria-label="Seu nome" required>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+          <textarea id="sugestao" name="sugestao" placeholder="Escreva sua sugestão..." aria-label="Sugestão" required></textarea>
+          <button type="submit" onclick="event.preventDefault()">Enviar sugestão</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <img src="logo-rodape.png" alt="Logo UERN">
+    <small>
+      Coordenação do Curso de Enfermagem – UERN Caicó • Chapa “Fortalecer para Avançar”
+    </small>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Contagem regressiva até 29/09
+    const targetDate = new Date("2025-09-29T00:00:00").getTime();
+    const timerElement = document.getElementById("timer");
+
+    setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        timerElement.innerHTML = "⏳ Votação encerrada";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s restantes`;
+    }, 1000);
+
+    // Sistema de apoio (like contador local)
+    let likeBtn = document.getElementById("likeBtn");
+    let likeCount = document.getElementById("likeCount");
+    let count = 0;
+    let liked = false;
+
+    likeBtn.addEventListener("click", function() {
+      liked = !liked;
+      if (liked) {
+        count++;
+        likeBtn.textContent = "❤️";
+      } else {
+        count--;
+        likeBtn.textContent = "🤍";
+      }
+      likeCount.textContent = count;
+    });
+  </script>
+
+</body>
+</html>
