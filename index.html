@@ -26,14 +26,13 @@
       width: 100%;
       display: flex;
       justify-content: space-around;
-      padding: 0 2rem;
+      gap: 2rem;
     }
     .banner-box {
       background: rgba(0,0,0,0.6);
-      padding: 0.6rem 1.2rem;
+      padding: 0.8rem 1.5rem;
       border-radius: 8px;
       text-align: center;
-      min-width: 200px;
     }
     .banner-box h1 {
       margin: 0;
@@ -80,7 +79,7 @@
 </head>
 <body>
 
-  <!-- Banner com nomes embaixo das fotos -->
+  <!-- Banner com nomes -->
   <header>
     <img src="banner.jpg" alt="Card da Chapa Fortalecer para Avançar" class="banner">
     <div class="banner-text-wrapper">
@@ -106,7 +105,7 @@
 
   <main class="container">
 
-    <!-- Carta Proposta -->
+    <!-- Texto inicial -->
     <section id="carta">
       <h2>Carta Proposta</h2>
       <p>É com profundo respeito, senso de responsabilidade e compromisso com a formação de qualidade que apresentamos nossa candidatura à Chefia e Vice-Chefia do Curso de Enfermagem – UERN Caicó.</p>
@@ -114,25 +113,32 @@
       <p>Esse caminho só foi possível graças ao trabalho comprometido das gestões anteriores, que nos deixam um legado valioso. A partir deste solo fértil, queremos propor novos voos.</p>
     </section>
 
-    <!-- Propostas -->
+    <!-- Propostas oficiais -->
     <section id="propostas">
       <h2>Propostas da Chapa</h2>
 
-      <h3>Gestão Inovadora</h3>
-      <div class="proposal-card">Implantar ferramentas digitais para modernizar processos administrativos e acadêmicos, garantindo maior agilidade, transparência e eficiência.</div>
+      <h3>Gestão inovadora</h3>
+      <div class="proposal-card">Implantar ferramentas digitais para modernizar processos administrativos e acadêmicos, garantindo maior agilidade, transparência e eficiência na gestão do curso.</div>
       <div class="proposal-card">Promover uma gestão participativa, aberta ao diálogo constante com estudantes, docentes, técnicos e comunidade externa.</div>
-      <div class="proposal-card">Ampliar os canais de comunicação digital com informações acessíveis e atualizadas.</div>
+      <div class="proposal-card">Ampliar os canais de comunicação digital entre coordenação e comunidade acadêmica, com informações acessíveis e atualizadas em tempo real.</div>
 
       <h3>Ensino e Qualificação Docente</h3>
       <div class="proposal-card">Apoiar e incentivar a qualificação contínua do corpo docente, fortalecendo metodologias inovadoras e centradas no estudante.</div>
-      <div class="proposal-card">Desenvolver estratégias com foco no desempenho do curso no ENADE, com ações de preparação contínua e acompanhamento estudantil.</div>
-      <div class="proposal-card">Lutar por melhorias na infraestrutura: clínica escola, laboratórios e espaços de convivência.</div>
+      <div class="proposal-card">Desenvolver estratégias com foco no desempenho do curso no ENADE, com ações de preparação contínua, acompanhamento estudantil e práticas pedagógicas modernas.</div>
+      <div class="proposal-card">Lutar por melhorias na infraestrutura: clínica escola, laboratórios e espaços de convivência e acolhimento para docentes e discentes.</div>
 
-      <h3>Visibilidade, Integração e Inovação</h3>
-      <div class="proposal-card">Ampliar a visibilidade regional do curso e fortalecer a integração ensino-serviço-comunidade.</div>
-      <div class="proposal-card">Estimular a cultura da inovação e do empreendedorismo no curso.</div>
-      <div class="proposal-card">Fortalecer ensino, pesquisa, extensão e pós-graduação, com novas especializações.</div>
-      <div class="proposal-card">Consolidar e ampliar parcerias interprofissionais e institucionais.</div>
+      <h3>Visibilidade, integração e inovação</h3>
+      <div class="proposal-card">Ampliar a visibilidade regional do curso e suas ações, fortalecendo a integração ensino-serviço-comunidade, reafirmando a formação crítica, ética e socialmente referenciada.</div>
+      <div class="proposal-card">Estimular a cultura da inovação e do empreendedorismo dentro do curso, apoiando projetos que proponham soluções criativas para desafios da saúde.</div>
+      <div class="proposal-card">Fortalecer ações de ensino, pesquisa, extensão e a pós-graduação, com estímulo à produção científica e criação de novas especializações que dialoguem com as demandas da região.</div>
+      <div class="proposal-card">Consolidar e ampliar parcerias interprofissionais e institucionais, promovendo integração com outros cursos, universidades, órgãos públicos e entidades de saúde, para enriquecer a formação acadêmica e abrir novas oportunidades para estudantes e docentes.</div>
+    </section>
+
+    <!-- Texto final -->
+    <section id="compromisso">
+      <h2>Nosso Compromisso</h2>
+      <p>Acreditamos no poder da construção coletiva. Queremos, junto com cada um de vocês – estudantes, docentes, técnicos e comunidade –, fortalecer o que já foi edificado e avançar com coragem e compromisso.</p>
+      <p>Contamos com seu apoio para seguirmos nesse caminho de crescimento e transformação.</p>
     </section>
 
   </main>
@@ -146,19 +152,19 @@
           <h3>Deixe seu apoio ou envie sua sugestão</h3>
         </hgroup>
 
-        <!-- Apoio (likes) -->
+        <!-- Apoio -->
         <div class="like-section">
           <button id="likeBtn">🤍</button>
           <p><span id="likeCount">0</span> apoios recebidos</p>
         </div>
 
-        <!-- Formulário de Sugestões -->
-        <form class="grid">
-          <input type="text" id="nome" name="nome" placeholder="Seu nome" aria-label="Seu nome" required>
-          <input type="email" id="email" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
-          <textarea id="sugestao" name="sugestao" placeholder="Escreva sua sugestão..." aria-label="Sugestão" required></textarea>
-          <button type="submit" onclick="event.preventDefault()">Enviar sugestão</button>
-        </form>
+        <!-- Google Forms -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoDxey3y18y4b6uxDRVtcDiSAnmyYm3DC7WeDWCkwffY6efw/viewform?embedded=true" 
+                width="100%" 
+                height="720" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">Carregando…</iframe>
       </article>
     </div>
   </section>
@@ -194,22 +200,27 @@
       timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s restantes`;
     }, 1000);
 
-    // Sistema de apoio (like contador local)
-    let likeBtn = document.getElementById("likeBtn");
-    let likeCount = document.getElementById("likeCount");
-    let count = 0;
-    let liked = false;
+    // Apoio conectado ao Google Sheets
+    const likeBtn = document.getElementById("likeBtn");
+    const likeCount = document.getElementById("likeCount");
+    const apiUrl = "https://script.google.com/macros/s/AKfycbyMZI-h0Afi2BRIKyFkrJeuxXj2HaeKNcWneZ_sQrWcQDm9hB0Ioiz9Kst5b1-RB4S5/exec";
 
-    likeBtn.addEventListener("click", function() {
-      liked = !liked;
-      if (liked) {
-        count++;
-        likeBtn.textContent = "❤️";
-      } else {
-        count--;
-        likeBtn.textContent = "🤍";
-      }
-      likeCount.textContent = count;
+    // Carregar contador inicial
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        likeCount.textContent = data.apoios;
+      });
+
+    // Incrementar quando clicar
+    likeBtn.addEventListener("click", () => {
+      fetch(apiUrl, { method: "POST" })
+        .then(response => response.json())
+        .then(data => {
+          likeCount.textContent = data.apoios;
+          likeBtn.textContent = "❤️";
+          likeBtn.disabled = true;
+        });
     });
   </script>
 
